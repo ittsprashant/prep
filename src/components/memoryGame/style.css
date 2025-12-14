@@ -1,0 +1,44 @@
+.main-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 376px;
+    margin: auto;
+}
+
+.memory-cell {
+    border: solid 1px coral;
+    height: 85px;
+    width: 85px;
+    font-size: 32px;
+    align-content: center;
+}
+
+.card-front {
+    display: none;
+}
+
+.flipped {
+    display: block;
+}
+
+.card-back {
+    background: grey;
+    width: 85px;
+    height: 85px;
+}
+
+.hidden {
+    display: none;
+}
+
+.reset {
+    margin-top: 20px;
+    background-color: coral;
+    color: antiquewhite;
+    border: solid 1px #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}

@@ -1,0 +1,13 @@
+.section {
+    display: flex;
+}
+
+.item {
+    display: flex;
+}
+
+.separator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
