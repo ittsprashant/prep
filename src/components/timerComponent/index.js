@@ -10,7 +10,7 @@ function TimerComponent() {
 
     const createTime = (value) => {
 
-        const milliSecond = Math.floor(value);
+        const milliSecond = value;
         const second = Math.floor(milliSecond/1000);
         const minutes = Math.floor(second/60);
 
@@ -26,6 +26,8 @@ function TimerComponent() {
             setTime(performance.now() - start);
             
         }, 10);
+        // we have used 10ms here because it is not possible for browser to reliably execute a callback after every 1ms and since we are using performance.now(), 
+        // the drift is avoided
 
     }, [])
 
